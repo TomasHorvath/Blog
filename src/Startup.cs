@@ -74,6 +74,11 @@ namespace downr
 
             app.UseMvc(routes =>
             {   
+
+               routes.MapRoute(
+                    name: "about",
+                    template: "{controller=About}/{action=Index}/{id?}");
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
