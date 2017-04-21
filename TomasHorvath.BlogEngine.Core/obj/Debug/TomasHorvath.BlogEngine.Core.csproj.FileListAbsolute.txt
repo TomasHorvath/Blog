@@ -1,0 +1,9 @@
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\TomasHorvath.BlogEngine.Core.dll.config
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\TomasHorvath.BlogEngine.Core.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\TomasHorvath.BlogEngine.Core.pdb
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.xml
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\obj\Debug\TomasHorvath.BlogEngine.Core.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\obj\Debug\TomasHorvath.BlogEngine.Core.pdb

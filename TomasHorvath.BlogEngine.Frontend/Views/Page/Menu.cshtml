@@ -1,0 +1,12 @@
+﻿@model IEnumerable<TomasHorvath.BlogEngine.Domain.DTO.MenuItemDto>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav navbar-right">
+		@foreach (TomasHorvath.BlogEngine.Domain.DTO.MenuItemDto menu in Model)
+		{
+		<li>
+			<a href="@menu.Url">@menu.Name</a>
+		</li>
+		}
+	</ul>
+</div>

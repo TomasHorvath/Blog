@@ -1,0 +1,16 @@
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\obj\Debug\TomasHorvath.BlogEngine.Domain.csprojResolveAssemblyReference.cache
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Domain.dll.config
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Domain.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Domain.pdb
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Core.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Core.pdb
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.xml
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\obj\Debug\TomasHorvath.BlogEngine.Domain.dll
+C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Domain\obj\Debug\TomasHorvath.BlogEngine.Domain.pdb

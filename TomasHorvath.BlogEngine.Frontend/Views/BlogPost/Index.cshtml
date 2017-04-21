@@ -1,0 +1,68 @@
+﻿@model   IPagedList<TomasHorvath.BlogEngine.Domain.DTO.BlogPostPreviewDto>
+@{
+  ViewBag.Title = "Index";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+  var previousPage = Model.HasPreviousPage ? Model.PageIndex - 1 : 0;
+  var nextPage = Model.HasNextPage ? Model.PageIndex + 1 : 0;
+}
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading">
+					<h1>@Html.Setting("BlogName")</h1>
+					<hr class="small">
+					<span class="subheading">@Html.Setting("BlogMotto")</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+			<div id="blog-container">
+				@foreach (TomasHorvath.BlogEngine.Domain.DTO.BlogPostPreviewDto post in Model)
+			{
+				<div class="post-preview" data-id="">
+					<a href="@post.Url">
+						<h2 class="post-title">
+							@post.Headline
+						</h2>
+						<h3 class="post-subtitle">
+							@post.Perex
+						</h3>
+					</a>
+					<p class="post-meta">Posted by <a href="#">@post.Author</a> @post.DateOfPublish</p>
+				</div>
+			}
+			</div>
+			<hr>
+
+
+			<ul class="pager">
+				<li class="previous" @if (!Model.HasPreviousPage) { <text> style="visibility:hidden;" </text>  }>
+					<a href="#" data-previousPage="@previousPage" data-pageSize="@Model.PageSize" id="previouspost"> &larr; Previous Posts</a>
+				</li>
+
+
+				@if (Model.HasNextPage)
+				{
+				<li class="next">
+					<a href="#" data-nextPage="@nextPage" data-pageSize="@Model.PageSize" id="nextpost">Older Posts &rarr;</a>
+				</li>
+				}
+
+			</ul>
+		</div>
+	</div>
+</div>
+<hr>
+
+
+
