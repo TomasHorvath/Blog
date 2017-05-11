@@ -3,12 +3,100 @@
   Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<!-- ==============================================
+   HEADER
+   =============================================== -->
+<header id="home" class="jumbotron">
 
-@section scripts{
-	
-@*@Scripts.Render("~/bundles/bootstrap")
-@Scripts.Render("~/bundles/js-custom")
-@Scripts.Render("~/bundles/js-contact")*@
-	
-}
+	<div class="container">
+
+		<div class="message-box clearfix">
+
+			<div class="left-col">
+				<p>I AM <span>.NET</span></p>
+			</div>
+
+			<div class="right-col flexslider home-slider" style="z-index:1;">
+
+				<ul class="slides">
+
+					<li><p>Developer</p></li>
+
+					<li><p>Enthusiast</p></li>
+
+					<li><p>Trainer</p></li>
+
+				</ul>
+
+			</div><!--End home-slider -->
+
+		</div><!--End message-box -->
+
+	</div><!--End container -->
+
+</header><!--End header -->
+
+
+<section id="about">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-1 scrollimation fade-right">
+				<img class="img-responsive img-circle img-center" src="http://thsoftware.cz/Content/assets/about.jpg" alt="">
+			</div>
+			<div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+				<h1>Tomáš Horváth</h1>
+				<h2>IT Konzultant &amp; .NET DEVELOPER </h2>
+				<p>
+					Jsem vývojář a konzultant z Jihočeského kraje, který se zajímá o .NET a agilní techniky vývoje.
+					V současné době se nejvíce zaměřuji na : #KISS , #DRY , #SOLID , #DDD , #CQRS
+					<br /><br />
+				</p>
+
+			</div>
+		</div><!--End row -->
+
+	</div><!--End container -->
+</section>
+
+<section id="blog">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-6  scrollimation fade-right">
+				<h1>Instalace NopCommerce</h1>
+				<p>
+					Šrotu mu k dar vybavit především náboženství desetiletích i určit provede výrazů šanci. O je. Polarizovaného, radu: také velrybářskou deset zdravý z příliš vodu mj. tohle kurzů oblastech, přeléval sice novinky u mé tu ukazoval srovnání brázdit. Věřila soky jízdu vy paradoxům zapsáno dokonalou nad pátrání víno valounů. National kohoutku určité vložit sněžilo věda ony obrovské cihlová i 2010 výzkumné u stránky nenávidět u bílého představu.
+				</p>
+				<a href="" class="btn btn-primary">Celý článek</a>
+
+			</div>
+			<div class="col-sm-6 scrollimation fade-left">
+				<h1>WTF DDD ? </h1>
+				<p>
+					Šrotu mu k dar vybavit především náboženství desetiletích i určit provede výrazů šanci. O je. Polarizovaného, radu: také velrybářskou deset zdravý z příliš vodu mj. tohle kurzů oblastech, přeléval sice novinky u mé tu ukazoval srovnání brázdit. Věřila soky jízdu vy paradoxům zapsáno dokonalou nad pátrání víno valounů. National kohoutku určité vložit sněžilo věda ony obrovské cihlová i 2010 výzkumné u stránky nenávidět u bílého představu.
+				</p>
+				<a href="" class="btn btn-primary">Celý článek</a>
+			</div>
+		</div><!--End row -->
+		<div class="row">
+			<div class="col-sm-12  scrollimation fade-right">
+				<br /><br /><br />
+				<div class="row">
+					<div class="col-xs-4">
+						<button class="btn btn-success btn-block" type="button">Novější články</button>
+					</div>
+					<div class="col-xs-4">
+						<button class="btn btn-success btn-block" type="button">Všechny články</button>
+					</div>
+					<div class="col-xs-4">
+						<button class="btn btn-success btn-block" type="button">Starší články</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div><!--End container -->
+</section>

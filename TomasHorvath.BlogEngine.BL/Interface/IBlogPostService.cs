@@ -27,12 +27,12 @@ namespace TomasHorvath.BlogEngine.BL.Interface
 		/// <summary>
 		/// Return entity for paging
 		/// </summary>
-		IPagedList<Domain.DTO.BlogPostPreviewDto> GetByPage(int pageNumber, int pageSize, out int totalRowCount);
+		IPagedList<Domain.DTO.BlogPost.BlogPostPreviewDto> GetByPage(int pageNumber, int pageSize, out int totalRowCount);
 
 		/// <summary>
 		/// Get Blog post by Id
 		/// </summary>
-		Domain.DTO.BlogPostDto GetById(Guid Id);
+		Domain.DTO.BlogPost.BlogPostDetailDTO GetById(Guid Id);
 
 		/// <summary>
 		/// Add Comment to blog post

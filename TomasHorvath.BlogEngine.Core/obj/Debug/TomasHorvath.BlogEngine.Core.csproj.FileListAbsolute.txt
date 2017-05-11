@@ -7,3 +7,14 @@ C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\Entity
 C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.SqlServer.xml
 C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\obj\Debug\TomasHorvath.BlogEngine.Core.dll
 C:\exmaple\TomasHorvath.BlogEngine\TomasHorvath.BlogEngine.Core\obj\Debug\TomasHorvath.BlogEngine.Core.pdb
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\TomasHorvath.BlogEngine.Core.dll.config
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\TomasHorvath.BlogEngine.Core.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\TomasHorvath.BlogEngine.Core.pdb
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\AutoMapper.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\AutoMapper.xml
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.xml
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\obj\Debug\TomasHorvath.BlogEngine.Core.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Core\obj\Debug\TomasHorvath.BlogEngine.Core.pdb

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomasHorvath.BlogEngine.Core", "TomasHorvath.BlogEngine.Core\TomasHorvath.BlogEngine.Core.csproj", "{793A5248-DDA2-4FC4-A221-F33B423CF07E}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomasHorvath.BlogEngine.Frontend", "TomasHorvath.BlogEngine.Frontend\TomasHorvath.BlogEngine.Frontend.csproj", "{BCBF8722-1276-44F2-BC81-8AEF55D47A66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomasHorvath.BlogEngine.Domain", "TomasHorvath.BlogEngine.Domain\TomasHorvath.BlogEngine.Domain.csproj", "{2CA33BB0-608A-4CD9-A2E4-CDF05298C124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomasHorvath.BlogEngine.Client", "TomasHorvath.BlogEngine.Client\TomasHorvath.BlogEngine.Client.csproj", "{4D6317C9-F612-4130-BB3A-753B19A50E87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,11 +43,16 @@ Global
 		{2CA33BB0-608A-4CD9-A2E4-CDF05298C124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA33BB0-608A-4CD9-A2E4-CDF05298C124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA33BB0-608A-4CD9-A2E4-CDF05298C124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D6317C9-F612-4130-BB3A-753B19A50E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6317C9-F612-4130-BB3A-753B19A50E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6317C9-F612-4130-BB3A-753B19A50E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6317C9-F612-4130-BB3A-753B19A50E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BCBF8722-1276-44F2-BC81-8AEF55D47A66} = {98A748A4-A7D7-4265-8359-2E0A41781FCD}
+		{4D6317C9-F612-4130-BB3A-753B19A50E87} = {98A748A4-A7D7-4265-8359-2E0A41781FCD}
 	EndGlobalSection
 EndGlobal

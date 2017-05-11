@@ -13,13 +13,13 @@ namespace TomasHorvath.BlogEngine.DAL.Repository
 		{
 		}
 
-		public Domain.DTO.BlogPostDto GetDtoById(Guid id)
+		public Domain.DTO.BlogPost.BlogPostDetailDTO GetDtoById(Guid id)
 		{
 			var query =
 				from post in _dataSession.Set<Domain.BlogPost>()
 				.Where(e => e.Id == id)
 				join author in _dataSession.Set<Domain.Author>() on post.AuthorId equals author.Id
-				select new Domain.DTO.BlogPostDto()
+				select new Domain.DTO.BlogPost.BlogPostDetailDTO()
 				{
 					AuthorName = author.FirstName + " " + author.LastName,
 					DateOfPublished = post.DateOfPublished,
@@ -34,7 +34,7 @@ namespace TomasHorvath.BlogEngine.DAL.Repository
 			return query.FirstOrDefault();
 		}
 
-		public IPagedList<Domain.DTO.BlogPostPreviewDto> GetByPage(int PageSize, int PageNumber, out int totalRowCount)
+		public IPagedList<Domain.DTO.BlogPost.BlogPostPreviewDto> GetByPage(int PageSize, int PageNumber, out int totalRowCount)
 		{
 			totalRowCount = _dataSession.Set<Domain.BlogPost>().Count();
 
@@ -43,7 +43,7 @@ namespace TomasHorvath.BlogEngine.DAL.Repository
 				.OrderByDescending(e=>e.DateOfPublished)
 				join author in _dataSession.Set<Domain.Author>() on post.AuthorId equals author.Id
 				join slug in _dataSession.Set<Domain.Slug>() on post.Id equals slug.EntityId
-				select new Domain.DTO.BlogPostPreviewDto()
+				select new Domain.DTO.BlogPost.BlogPostPreviewDto()
 				{
 					 Author = author.FirstName + " " + author.LastName,
 					 DateOfPublish = post.DateOfPublished,
@@ -53,7 +53,7 @@ namespace TomasHorvath.BlogEngine.DAL.Repository
 				};
 			query = query.OrderByDescending(e => e.DateOfPublish);
 
-			return  new PagedList<Domain.DTO.BlogPostPreviewDto>(query, PageNumber, PageSize);
+			return  new PagedList<Domain.DTO.BlogPost.BlogPostPreviewDto>(query, PageNumber, PageSize);
 
 		}
 	}

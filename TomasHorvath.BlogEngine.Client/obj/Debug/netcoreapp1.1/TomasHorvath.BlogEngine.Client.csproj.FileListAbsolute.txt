@@ -1,0 +1,8 @@
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\bin\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.deps.json
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\bin\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.runtimeconfig.json
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\bin\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.runtimeconfig.dev.json
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\bin\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\bin\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.pdb
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\obj\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.AssemblyInfo.cs
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\obj\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.dll
+C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Client\obj\Debug\netcoreapp1.1\TomasHorvath.BlogEngine.Client.pdb

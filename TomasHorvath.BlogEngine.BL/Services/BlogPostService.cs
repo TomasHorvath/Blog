@@ -85,7 +85,7 @@ namespace TomasHorvath.BlogEngine.BL.Services
 			}
 		}
 
-		public Domain.DTO.BlogPostDto GetById(Guid Id)
+		public Domain.DTO.BlogPost.BlogPostDetailDTO GetById(Guid Id)
 		{
 			if (Id == Guid.Empty)
 				throw new ArgumentNullException("neplatný objekt id");
@@ -114,7 +114,7 @@ namespace TomasHorvath.BlogEngine.BL.Services
 			throw new NotImplementedException();
 		}
 
-		public Core.IPagedList<Domain.DTO.BlogPostPreviewDto> GetByPage(int pageNumber, int pageSize, out int totalRowCount)
+		public Core.IPagedList<Domain.DTO.BlogPost.BlogPostPreviewDto> GetByPage(int pageNumber, int pageSize, out int totalRowCount)
 		{
 			return _blogpostRepository.GetByPage(pageNumber, pageSize, out totalRowCount);
 		}

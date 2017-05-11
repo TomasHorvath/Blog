@@ -9,7 +9,7 @@ namespace TomasHorvath.BlogEngine.DAL.Interfaces
 {
 	public interface IBlogPostRepository : IRepository<Domain.BlogPost, Guid>
 	{
-		IPagedList<Domain.DTO.BlogPostPreviewDto> GetByPage(int pageNumber, int pageSize, out int totalRowCount);
-		Domain.DTO.BlogPostDto GetDtoById(Guid id);
+		IPagedList<Domain.DTO.BlogPost.BlogPostPreviewDto> GetByPage(int pageNumber, int pageSize, out int totalRowCount);
+		Domain.DTO.BlogPost.BlogPostDetailDTO GetDtoById(Guid id);
 	}
 }

@@ -1,39 +1,110 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" class="no-js">
 <head>
+
+	<!-- ==============================================
+	Title and Meta Tags
+	=============================================== -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	
 	<title>@ViewBag.Title</title>
-	<!-- Core CSS -->
-	@*@Styles.Render("~/bootstrap")*@
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	@Styles.Render("~/Content/css")
-	
-	<!-- Custom Fonts -->
-	@Styles.Render("~/Content/css/font-awesome")
-	<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<meta name="keywords" content="@ViewBag.Keywords" />
+	<meta name="description" content="@ViewBag.Description" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- ==============================================
+	Favicons
+	=============================================== -->
+	<link rel="shortcut icon" href="~/Content/assets/favicon.ico">
+	<link rel="apple-touch-icon" href="~/Content/assets/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="~/Content/assets/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="~/Content/assets/apple-touch-icon-114x114.png">
+
+	<!-- ==============================================
+	CSS
+	=============================================== -->
+	<link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+	<link rel="stylesheet" href="~/Content/css/flexslider.css">
+	<link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
+	<link rel="stylesheet" href="~/Content/css/designr-theme-cyan.css">
+
+
+	<!-- ==============================================
+	Fonts
+	=============================================== -->
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+	<!-- ==============================================
+	JS
+	=============================================== -->
 	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+	<script type="text/javascript" src="~/Content/js/libs/modernizr.min.js"></script>
+
+
 </head>
-<body>
-	<!-- Navigation -->
+
+<body data-spy="scroll" data-target="#main-nav" data-offset="200">
+
+	<!--=== PAGE PRELOADER ===-->
+	<!--<div id="page-loader"><span class="page-loader-gif"></span></div>-->
+	<!-- ==============================================
+	MAIN NAV
+	=============================================== -->
 	@Html.Partial("_navigation")
-	
+	<!--End main-nav -->
+
 	@RenderBody()
+	<!-- ==============================================
+	FOOTER
+	=============================================== -->
+	<footer id="main-footer">
 
-	@Html.Partial("_footer")
+		<div class="container">
 
-	@Scripts.Render("~/bundles/jquery")
+			<div class="row">
 
-	@RenderSection("scripts", required: false)
-	
+				<div class="col-sm-6 left-col">
+					<h1 class="small-logo">Tomáš Horváth<br /><span>IT Consultant & .NET DEVELOPER</span></h1>
+					<ul class="footer-nav">
+						<li><a class="scrollto" href="#home">Úvod</a></li>
+						<li><a class="scrollto" href="#services">Služby</a></li>
+						<li><a class="scrollto" href="#portfolio">Portfolio</a></li>
+						<li><a class="scrollto" href="#contact">Kontakt</a></li>
+					</ul>
+					<p>&copy;Copyright 2015 / All Rights Reserved</p>
+				</div>
+
+				<div class="col-sm-6 right-col">
+					<h4>Kdo jsem ?</h4>
+					<p>Jsem IT konzultant a vývojář, který se rád učí a zajíma se o nové technologie. Zaroveň jsem věčný optimista v životě ,ale velký realista v analýzách systémů a navrhování.</p>
+				</div>
+
+			</div><!-- End row -->
+
+		</div><!-- End container -->
+
+	</footer><!-- End footer -->
+	<!-- ==============================================
+	SCRIPTS
+	=============================================== -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
+
+	<script src="~/Content/js/libs/bootstrap.min.js"></script>
+	<script src='~/Content/js/jquery.scrollto.js'></script>
+	<script src='~/Content/js/jquery.flexslider.min.js'></script>
+	<script src='~/Content/js/twitterFetcher_v10_min.js'></script>
+	<script src='~/Content/js/jquery.masonry.min.js'></script>
+	<script src="~/Content/js/waypoints.min.js"></script>
+	<script src="~/Content/js/jquery.easypiechart.min.js"></script>
+	<script src="~/Content/js/jquery.backstretch.min.js"></script>
+	<script src="~/Content/js/contact.js"></script>
+	<script src="~/Content/js/designr.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,15 @@
-﻿@model   IPagedList<TomasHorvath.BlogEngine.Domain.DTO.BlogPostPreviewDto>
+﻿
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><br /><br /><br /><br />
+@*@model   IPagedList<TomasHorvath.BlogEngine.Domain.DTO.BlogPost.BlogPostPreviewDto>
 @{
   ViewBag.Title = "Index";
   Layout = "~/Views/Shared/_Layout.cshtml";
@@ -27,7 +38,7 @@
 
 
 			<div id="blog-container">
-				@foreach (TomasHorvath.BlogEngine.Domain.DTO.BlogPostPreviewDto post in Model)
+				@foreach (TomasHorvath.BlogEngine.Domain.DTO.BlogPost.BlogPostPreviewDto post in Model)
 			{
 				<div class="post-preview" data-id="">
 					<a href="@post.Url">
@@ -62,7 +73,7 @@
 		</div>
 	</div>
 </div>
-<hr>
+<hr>*@
 
 
 

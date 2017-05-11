@@ -14,7 +14,7 @@ namespace TomasHorvath.BlogEngine.DAL.Repository
 		{
 		}
 
-		public IEnumerable<Domain.DTO.BlogPostPreviewDto> GetByPage(int PageSize, int PageNumber, out int totalRowCount)
+		public IEnumerable<Domain.DTO.BlogPost.BlogPostPreviewDto> GetByPage(int PageSize, int PageNumber, out int totalRowCount)
 		{
 			totalRowCount = _dataSession.Set<Domain.BlogPost>().Count();
 
@@ -25,7 +25,7 @@ namespace TomasHorvath.BlogEngine.DAL.Repository
 				.Take(PageSize)
 				join author in _dataSession.Set<Domain.Author>() on post.AuthorId equals author.Id
 				join slug in _dataSession.Set<Domain.Slug>() on post.Id equals slug.EntityId
-				select new Domain.DTO.BlogPostPreviewDto()
+				select new Domain.DTO.BlogPost.BlogPostPreviewDto()
 				{
 					Author = author.FirstName + " " + author.LastName,
 					DateOfPublish = post.DateOfPublished,
