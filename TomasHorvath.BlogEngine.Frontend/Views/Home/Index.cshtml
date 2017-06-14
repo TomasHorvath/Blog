@@ -59,44 +59,57 @@
 
 	</div><!--End container -->
 </section>
+<div id="blog-section">
+	@Html.Action("Index", "BlogPost", new { pageSize = 10 })
+</div>
+@section scripts {
 
-<section id="blog">
+	<script>
+	function Set(context) {
 
-	<div class="container">
+            var page = context.data("page");
+            //var obj = JSON.parse($("#filterContext").val());
+            //obj.CurrentPage = page;
+            var url = "@Url.Action("Index", "BlogPost")" + "?page="+page;
 
-		<div class="row">
-			<div class="col-sm-6  scrollimation fade-right">
-				<h1>Instalace NopCommerce</h1>
-				<p>
-					Šrotu mu k dar vybavit především náboženství desetiletích i určit provede výrazů šanci. O je. Polarizovaného, radu: také velrybářskou deset zdravý z příliš vodu mj. tohle kurzů oblastech, přeléval sice novinky u mé tu ukazoval srovnání brázdit. Věřila soky jízdu vy paradoxům zapsáno dokonalou nad pátrání víno valounů. National kohoutku určité vložit sněžilo věda ony obrovské cihlová i 2010 výzkumné u stránky nenávidět u bílého představu.
-				</p>
-				<a href="" class="btn btn-primary">Celý článek</a>
+            $.ajax({
+                url: url,
+                type: 'GET',
+                //data: JSON.stringify(obj),
+                beforeSend: function () {
+                    //AjaxBegin();
+                },
+                contentType: 'application/json; charset=utf-8',
+                error: function (xhr) {
+                    alert('Error: ' + xhr.statusText);
+                },
+                success: function (result) {
 
-			</div>
-			<div class="col-sm-6 scrollimation fade-left">
-				<h1>WTF DDD ? </h1>
-				<p>
-					Šrotu mu k dar vybavit především náboženství desetiletích i určit provede výrazů šanci. O je. Polarizovaného, radu: také velrybářskou deset zdravý z příliš vodu mj. tohle kurzů oblastech, přeléval sice novinky u mé tu ukazoval srovnání brázdit. Věřila soky jízdu vy paradoxům zapsáno dokonalou nad pátrání víno valounů. National kohoutku určité vložit sněžilo věda ony obrovské cihlová i 2010 výzkumné u stránky nenávidět u bílého představu.
-				</p>
-				<a href="" class="btn btn-primary">Celý článek</a>
-			</div>
-		</div><!--End row -->
-		<div class="row">
-			<div class="col-sm-12  scrollimation fade-right">
-				<br /><br /><br />
-				<div class="row">
-					<div class="col-xs-4">
-						<button class="btn btn-success btn-block" type="button">Novější články</button>
-					</div>
-					<div class="col-xs-4">
-						<button class="btn btn-success btn-block" type="button">Všechny články</button>
-					</div>
-					<div class="col-xs-4">
-						<button class="btn btn-success btn-block" type="button">Starší články</button>
-					</div>
-				</div>
-			</div>
-		</div>
+					//$("#blog-section").empty();
+					$("#blog-section").html(result);
+                  
 
-	</div><!--End container -->
-</section>
+                },
+                async: false
+            });
+        }
+
+        function SetPaging() {
+
+            $(".datapage").unbind("click");
+            $(".datapage").click(function (event) {
+                event.preventDefault();
+               var context = $(this);
+                Set(context);
+
+            });
+
+
+	}
+
+		$(document).ready(function () {
+			SetPaging();
+		});
+	</script>
+
+}

@@ -33,3 +33,22 @@ C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Entity
 C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\thsof\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\AutoMapper.xml
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Domain.dll.config
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Domain.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Domain.pdb
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Core.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\AutoMapper.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Core.pdb
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\TomasHorvath.BlogEngine.Core.dll.config
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\bin\Debug\AutoMapper.xml
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\obj\Debug\TomasHorvath.BlogEngine.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\obj\Debug\TomasHorvath.BlogEngine.Domain.dll
+C:\Users\Tomáš Horváth\Source\Repos\Blog\TomasHorvath.BlogEngine.Domain\obj\Debug\TomasHorvath.BlogEngine.Domain.pdb

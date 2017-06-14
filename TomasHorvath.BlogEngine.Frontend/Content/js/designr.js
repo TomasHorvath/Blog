@@ -237,9 +237,9 @@ $(document).ready(function() {
 	/*============================================
 	Backstretch Images
 	==============================================*/
-	$.backstretch('../Content/assets/header-bg.jpg');
+	$.backstretch('http://localhost/TomasHorvath.BlogEngine.Frontend/Content/assets/header-bg.jpg');
 
-	$('body').append('<img class="preload-image" src="../Content/assets/contact-bg.jpg" style="display:none;"/>');
+	$('body').append('<img class="preload-image" src="http://localhost/TomasHorvath.BlogEngine.Frontend/Content/assets/contact-bg.jpg" style="display:none;"/>');
 
 	$('#about').waypoint(function(direction){
 	
@@ -248,9 +248,9 @@ $(document).ready(function() {
 		$('.backstretch').remove();
 	
 		if (direction=='down'){
-		    $.backstretch('../Content/assets/contact-bg.jpg');
+			$.backstretch('http://localhost/TomasHorvath.BlogEngine.Frontend/Content/assets/contact-bg.jpg');
 		}else{
-		    $.backstretch('../Content/assets/header-bg.jpg');
+			$.backstretch('http://localhost/TomasHorvath.BlogEngine.Frontend/Content/assets/header-bg.jpg');
 		}
 	});
 	

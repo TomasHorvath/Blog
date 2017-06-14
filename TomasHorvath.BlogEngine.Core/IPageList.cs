@@ -14,5 +14,8 @@ namespace TomasHorvath.BlogEngine.Core
 		int TotalPages { get; }
 		bool HasPreviousPage { get; }
 		bool HasNextPage { get; }
+		int StartPage { get; }
+		int EndPage { get; }
+		string FilterJson { get; }
 	}
 }

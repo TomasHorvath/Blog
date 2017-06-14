@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -16,32 +17,15 @@ namespace TomasHorvath.BlogEngine.Frontend.Controllers
 			_blogService = blog;
 		}
 
-		public ActionResult Index(int? pageSize, int? page)
-
+		public PartialViewResult Index(int? pageSize, int? page)
 		{
-
+			ViewBag.Root = ConfigurationManager.AppSettings["Root"];
 			var PageNumber = (page ?? 0);
-			var PageSize = (pageSize ?? 1);
+			var PageSize = (pageSize ?? 10);
 			var totalRowCount = 0;
 
-			var blogPosts = _blogService.GetByPage(PageSize,PageNumber, out totalRowCount);
-			if (Request.IsAjaxRequest())
-			{
-				return Json(
-					new
-				{
-					HasPreviosPage = blogPosts.HasPreviousPage,
-					HasNextPage = blogPosts.HasNextPage,
-					Items = blogPosts,
-					PageIndex = blogPosts.PageIndex,
-					PageSize = blogPosts.PageSize,
-					TotalPage = blogPosts.TotalCount
-				},JsonRequestBehavior.AllowGet);
-			}
-			else
-			{
-				return View(blogPosts);
-			}
+			var blogPosts = _blogService.GetByPage(PageSize, PageNumber, out totalRowCount);
+			return PartialView(blogPosts);
 		}
 
 		public ActionResult Detail(Guid Id)

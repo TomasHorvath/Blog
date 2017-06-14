@@ -1,79 +1,61 @@
-﻿
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /><br /><br /><br /><br />
-@*@model   IPagedList<TomasHorvath.BlogEngine.Domain.DTO.BlogPost.BlogPostPreviewDto>
-@{
-  ViewBag.Title = "Index";
-  Layout = "~/Views/Shared/_Layout.cshtml";
-  var previousPage = Model.HasPreviousPage ? Model.PageIndex - 1 : 0;
-  var nextPage = Model.HasNextPage ? Model.PageIndex + 1 : 0;
-}
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header">
+﻿@{
+  string root = ViewBag.Root;
+
+ }
+@model IPagedList<TomasHorvath.BlogEngine.Domain.DTO.BlogPost.BlogPostPreviewDto>
+<section id="blog">
 	<div class="container">
+		<input type="hidden" name="filterContext" id="filterContext" value="@Model.FilterJson">
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="site-heading">
-					<h1>@Html.Setting("BlogName")</h1>
-					<hr class="small">
-					<span class="subheading">@Html.Setting("BlogMotto")</span>
-				</div>
-			</div>
+		@foreach (TomasHorvath.BlogEngine.Domain.DTO.BlogPost.BlogPostPreviewDto article in Model)
+		{
+		<div class="col-sm-6">
+			<h1>@article.Headline</h1>
+			<p>
+				@article.Perex
+			</p>
+			<a href="@root@article.Url" class="btn btn-primary">Celý článek</a>
 		</div>
-	</div>
-</header>
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		}
 
-
-			<div id="blog-container">
-				@foreach (TomasHorvath.BlogEngine.Domain.DTO.BlogPost.BlogPostPreviewDto post in Model)
-			{
-				<div class="post-preview" data-id="">
-					<a href="@post.Url">
-						<h2 class="post-title">
-							@post.Headline
-						</h2>
-						<h3 class="post-subtitle">
-							@post.Perex
-						</h3>
-					</a>
-					<p class="post-meta">Posted by <a href="#">@post.Author</a> @post.DateOfPublish</p>
-				</div>
-			}
-			</div>
-			<hr>
-
-
-			<ul class="pager">
-				<li class="previous" @if (!Model.HasPreviousPage) { <text> style="visibility:hidden;" </text>  }>
-					<a href="#" data-previousPage="@previousPage" data-pageSize="@Model.PageSize" id="previouspost"> &larr; Previous Posts</a>
-				</li>
-
-
-				@if (Model.HasNextPage)
+		</div><!--End row -->
+		<div class="row">
+			<div class="col-sm-12 ">
+				<!-- Vouchers -->
+				@if (Model.EndPage > 1)
 				{
-				<li class="next">
-					<a href="#" data-nextPage="@nextPage" data-pageSize="@Model.PageSize" id="nextpost">Older Posts &rarr;</a>
-				</li>
+				<ul class="pagination">
+					@if (Model.PageIndex > 1)
+					{
+					<li>
+						<a class="datapage" data-page="1" href="#">First</a>
+					</li>
+					<li>
+						<a class="datapage" data-page="@(Model.PageIndex - 1)" href="~/Home/Index?page=@(Model.PageIndex - 1)">Previous</a>
+					</li>
+					}
+
+					@for (var page = Model.StartPage; page <= Model.EndPage; page++)
+					{
+					<li class="@(page == Model.PageIndex ? "active" : "")">
+						<a class="datapage" data-page="@page" href="~/Home/Index?page=@page">@page</a>
+					</li>    }
+
+					@if (Model.PageIndex < Model.TotalPages)
+					{
+					<li>
+						<a class="datapage" data-page="@(Model.PageIndex + 1)" href="~/Home/Index?page=@(Model.PageIndex + 1)">Next</a>
+					</li>
+					<li>
+						<a class="datapage" data-page="@(Model.TotalPages)" href="~/Home/Index?page=@(Model.TotalPages)">Last</a>
+					</li>
+					}
+				</ul>
 				}
 
-			</ul>
+
+			</div>
 		</div>
-	</div>
-</div>
-<hr>*@
 
-
-
+	</div><!--End container -->
+</section>
